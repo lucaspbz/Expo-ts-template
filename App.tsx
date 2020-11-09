@@ -1,20 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-
-import AppProvider from './src/hooks';
-
-import Routes from './src/routes';
+import { View, Text } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
 const App: React.FC = () => {
   return (
-    <NavigationContainer>
-      <StatusBar translucent />
-
-      <AppProvider>
-        <Routes />
-      </AppProvider>
-    </NavigationContainer>
+    <View>
+      <Text>Open up App.tsx to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
   );
 };
 
